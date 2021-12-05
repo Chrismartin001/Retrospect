@@ -10,13 +10,17 @@ const grabWebsites = () => {
     if (err) {
       console.log(err);
     }
-    websiteList = JSON.parse(data);
+    websiteList = JSON.parse(JSON.stringify(data));
   });
 };
 
 grabWebsites();
 
 router.get("/", (req, res) => {
+  res.json(websiteList);
+});
+
+router.get("/:id", (req, res) => {
   const strippedData = websiteList.find((website) => {
     return website.id === req.params.id;
   });
