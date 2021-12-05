@@ -1,0 +1,16 @@
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
