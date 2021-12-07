@@ -4,79 +4,65 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Logout from "./pages/Logout";
+import jwt_decode from "jwt-decode";
 
 class App extends Component {
   state = {
-    isSignedUp: false,
-    isLoggedIn: false,
-    isLoginError: false,
-    errorMessage: "",
+    currentUser: null,
   };
 
-  signup = (e) => {
-    e.preventDefault();
-    const { username, name, password } = this.signUpForm;
-  };
-
-  login = (e) => {
-    e.preventDefault();
-    const { username, password } = this.loginForm;
-  };
-
-  renderSignUp() {
-    return (
-      <div>
-        <h1>SignUp</h1>
-        <form ref={(form) => (this.signUpForm = form)}>
-          <div className="form-group">
-            Username: <input type="text" name="username" />
-          </div>
-          <div className="form-group">
-            Name: <input type="text" name="name" />
-          </div>
-          <div className="form-group">
-            Password: <input type="password" name="password" />
-          </div>
-          <button className="btn btn-primary" onClick={this.signup}>
-            Signup
-          </button>
-        </form>
-      </div>
-    );
+  componentDidMount() {
+    const token = sessionStorage.getItem("token");
+    if (token) {
+      this.setState({ currentUser: jwt_decode(token) });
+    }
   }
 
-  renderLogin = () => {
-    const { isLoginError, errorMessage } = this.state;
-    return (
-      <div>
-        <h1>Login</h1>
-        {isLoginError && <label style={{ color: "red" }}>{errorMessage}</label>}
-        <form ref={(form) => (this.loginForm = form)}>
-          <div className="form-group">
-            Username: <input type="text" name="username" />
-          </div>
-          <div className="form-group">
-            Password: <input type="password" name="password" />
-          </div>
-          <button className="btn btn-primary" onClick={this.login}>
-            Login
-          </button>
-        </form>
-      </div>
-    );
+  handleLoginSuccess = (user) => {
+    console.log(user);
+    this.setState({ currentUser: user });
+  };
+
+  handleLogout = () => {
+    console.log("handleLogout on App");
+    sessionStorage.removeItem("token");
+    this.setState({
+      currentUser: null,
+    });
   };
 
   render() {
-    const { isLoggedIn, isSignedUp } = this.state;
-
-    if (!isSignedUp) return this.renderSignUp();
-    if (!isLoggedIn) return this.renderLogin();
-
     return (
       <div>
         <BrowserRouter>
-          <Navbar />
+          <Navbar user={this.state.currentUser} />
+
           <Switch>
+            <Route
+              path={"/login"}
+              render={(routerProps) => (
+                <Login
+                  {...routerProps}
+                  onLoginSuccess={(user) => {
+                    this.handleLoginSuccess(user);
+                  }}
+                />
+              )}
+            />
+            <Route
+              path={"/logout"}
+              render={(routerProps) => (
+                <Logout
+                  {...routerProps}
+                  handleLogout={() => {
+                    this.handleLogout();
+                  }}
+                />
+              )}
+            />
+
             <Route path="/" exact component={Home} />
             <Route
               path="/websites/:id"
