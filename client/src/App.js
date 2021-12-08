@@ -63,12 +63,6 @@ class App extends Component {
             />
 
             <Route path="/" exact component={Home} />
-            <Route
-              path="/websites/:id"
-              render={(...reactRouterDomProps) => {
-                return <Home {...reactRouterDomProps} />;
-              }}
-            />
           </Switch>
         </BrowserRouter>
       </div>

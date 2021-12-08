@@ -16,7 +16,7 @@ export default function List(props) {
               <p>{web.description}</p>
               <div className="card-bottom">
                 <p>{web.likes}</p>
-                <Link to={`/reviews/${web.id}`}>
+                <Link to={`/websites/${web.id}`}>
                   <button className="card-bottom__button">Reviews</button>
                 </Link>
               </div>
