@@ -1,15 +1,17 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const morgan = require("morgan");
-const websiteRoutes = require("./routes/websites");
-const reviewRoutes = require("./routes/reviews");
+const websiteRoutes = require("./routes/websiteRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
 const PORT = process.env.port || 8080;
 
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(cors());
 
-app.use("/api/v1/reviews", reviewRoutes);
-app.use("/api/v1/websites", websiteRoutes);
+app.use("/reviews", reviewRoutes);
+app.use("/websites", websiteRoutes);
 
 // app.use(express.static(path.join(__dirname, "public")));
 function authorize(req, res, next) {

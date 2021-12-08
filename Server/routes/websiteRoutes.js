@@ -10,7 +10,7 @@ const grabWebsites = () => {
     if (err) {
       console.log(err);
     }
-    websiteList = JSON.parse(JSON.stringify(data));
+    websiteList = JSON.parse(data);
   });
 };
 

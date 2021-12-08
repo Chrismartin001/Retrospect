@@ -1,6 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
-import "./Login.scss";
+// import "./Login.scss";
 
 class Login extends Component {
   state = {
