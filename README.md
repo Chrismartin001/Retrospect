@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Required
+
+!important
+This was made with React Router Dom version 5.3.0
+
+All other packages are up to date
+so npm i should install
+
+SASS,
+AXIOS,
+UUID,
+CORS,
+EXPRESS,
+MORGAN,
+FS,
+JWT CODE,
+BOOSTRAP
+
+You will also need to set up a real .env file for your port.
+
 ## Available Scripts
 
 In the project directory, you can run:

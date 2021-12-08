@@ -14,8 +14,8 @@ export default function Navbar() {
           <Link to="/">
             <p className="nav-link">Home</p>
           </Link>
-          <Link to="/Login">
-            <p className="nav-link">login</p>
+          <Link to="/review">
+            <p className="nav-link">Upload</p>
           </Link>
         </div>
       </div>

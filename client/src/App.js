@@ -64,6 +64,7 @@ class App extends Component {
             />
 
             <Route path={"/website/:id"} component={Review} />
+            <Route path="/review" component={Review} />
 
             <Route path="/" exact component={Home} />
           </Switch>

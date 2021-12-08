@@ -34,9 +34,10 @@ router.post("/", (req, res) => {
   const { name, description, link } = req.body;
 
   const newWebsite = {
+    title,
     name,
     description,
-    link,
+    reviews,
     timestamp: Date.now(),
     id: uuid(),
   };
