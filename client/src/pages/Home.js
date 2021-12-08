@@ -25,7 +25,6 @@ export default class Home extends Component {
     return (
       this.state.websiteVid && (
         <div>
-          <h1>hello</h1>
           <List websiteVid={this.state.websiteVid} />
         </div>
       )

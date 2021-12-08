@@ -1,21 +1,22 @@
 import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/wonderland.jpg";
 
 export default function Navbar() {
   return (
     <div className="navbar-nav">
       <Link to="/">
-        <h1>RetroSpeckt</h1>
+        <img src={Logo} className="img" />
       </Link>
-      <ul>
+      <div>
         <Link to="/">
-          <li className="nav-link">Home</li>
+          <p className="nav-link">Home</p>
         </Link>
         <Link to="/Login">
-          <li className="nav-link">login</li>
+          <p className="nav-link">login</p>
         </Link>
-      </ul>
+      </div>
     </div>
   );
 }

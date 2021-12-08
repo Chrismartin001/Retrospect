@@ -1,0 +1,25 @@
+.website-card {
+  border: 1rem black;
+  margin: -70px 300px;
+  box-shadow: 0px 2px 15px #13182c1a;
+  background-color: white;
+  padding: 20px;
+}
+
+.websiteList-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-bottom {
+  justify-content: flex-end;
+  display: flex;
+  margin-bottom: 3rem;
+
+  &__button {
+    margin-left: 5rem;
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+  }
+}
