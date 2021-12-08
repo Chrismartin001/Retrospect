@@ -31,15 +31,15 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { name, description, link } = req.body;
+  const { name, description, reviews, title, timestamp } = req.body;
 
   const newWebsite = {
-    title,
-    name,
-    description,
-    reviews,
+    title: "Github",
+    name: "Chris",
+    description: "Github is a place for developers to share, download, and store code",
+    reviews: "Github is awesome",
     timestamp: Date.now(),
-    id: uuid(),
+    // id: uuid(),
   };
   websiteList.push(newWebsite);
 

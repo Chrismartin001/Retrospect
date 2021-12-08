@@ -19,7 +19,6 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <hr />
     </div>
   );
 }

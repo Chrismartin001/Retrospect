@@ -3,16 +3,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 4.2rem;
+  background-color: lightgray;
 
   .nav-link {
     list-style: none;
     font-size: 1.5rem;
     margin-top: 1rem;
+    margin-left: 1rem;
   }
 }
 
 .img {
-  width: 25rem;
+  margin-left: 4.5rem;
+  width: 23rem;
   margin-top: -5rem;
 }
