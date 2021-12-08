@@ -3,91 +3,83 @@
     "title": "Daemon Tools",
     "description": "DAEMON Tools is a virtual drive and optical disc authoring program for Microsoft Windows and Mac",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Daemon tools is a great virtual disk mountting program fairly easy to work with depending the versions though most are fine. A major gripe though is Daemon tools in certain newer versions they have been known to sneak outside additional programs in the download so read carefully cause these could be potentially harmful or jsut rather annoying to find and remove",
-        "timestamp": 1626011132000
-      }
-    ],
+    "reviews": "Daemon tools is a great virtual disk mountting program fairly easy to work with depending the versions though most are fine. A major gripe though is Daemon tools in certain newer versions they have been known to sneak outside additional programs in the download so read carefully cause these could be potentially harmful or jsut rather annoying to find and remove",
+
+    "name": "Chris Martin",
+    "timestamp": 1626011132000,
+
     "id": "1"
   },
   {
     "title": "Emulator Games",
     "description": "Emulator Games provides a simple way for you to download video game ROMs and play them on your computer or online within your browser.",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Emulator Games is a safe hub for a emulation of all your favourite devices and as long as you own the game its fair use and will have access to all your favourite all games at yoru finger tips.",
-        "timestamp": 1625177192000
-      }
-    ],
+    "reviews": "Emulator Games is a safe hub for a emulation of all your favourite devices and as long as you own the game its fair use and will have access to all your favourite all games at yoru finger tips.",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1625177192000,
+
     "id": "c05b9a93-8682-4ab6-aff2-92ebb4bbfc14"
   },
   {
     "title": "Overwolf",
     "description": "Overwolf is an Israel-based technology platform that enables third-party developers to build, distribute, and monetize in-game apps and mods. The platform was launched by Overwolf Ltd. Wikipedia",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Overwolf is a great source to find all your favourite mods for all your favourite games and is completely free and safe to download and also helps you create and distribute your own in game apps and mods. ",
-        "timestamp": 1623002522000
-      }
-    ],
+    "reviews": "Overwolf is a great source to find all your favourite mods for all your favourite games and is completely free and safe to download and also helps you create and distribute your own in game apps and mods. ",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1623002522000,
+
     "id": "25ce5d91-a262-4dcf-bb87-42b87546bcfa"
   },
   {
     "title": "Avast Security",
     "description": "Fast, Light and Easy to Use. Improved Security for Your PC. Real-Time Protection and Intelligent Threat-Detection Keeps Your PC Secured. Stay Safer Online. Wi-Fi Inspector. Wi-Fi Security Alerts. Webcam Shield Protection. Block Malware..",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Avast security is a great free software and it is very good at covering your anti virus and malware needs as well as decent ammount of other free features such as a network scanner. They have Premium options though they're really not worth the buck as other potential free programs to do that for you. ",
-        "timestamp": 1620930181000
-      }
-    ],
+    "reviews": "Avast security is a great free software and it is very good at covering your anti virus and malware needs as well as decent ammount of other free features such as a network scanner. They have Premium options though they're really not worth the buck as other potential free programs to do that for you. ",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1620930181000,
+
     "id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7"
   },
   {
     "title": "LogMEIn Hamachi",
     "description": "LogMeIn Hamachi is a virtual private network (VPN) application. It is capable of establishing direct links between computers that are behind network address translation ('NAT') firewalls without requiring reconfiguration (when the user's PC can be accessed directly without relays from the Internet/WAN side); in other words, it establishes a connection over the Internet that emulates the connection that would exist if the computers were connected over a local area network ('LAN').",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Hamachi is a great free software for connecting your computer with friends to be able to play and enjoy playing games together acting like a lan function. This is really great for some older games that no longer have fully supported multiplayer servers or basically another way to create your own little private 'server'/lobby if the game doesn't allow it",
-        "timestamp": 1630678260000
-      }
-    ],
+    "reviews": "Hamachi is a great free software for connecting your computer with friends to be able to play and enjoy playing games together acting like a lan function. This is really great for some older games that no longer have fully supported multiplayer servers or basically another way to create your own little private 'server'/lobby if the game doesn't allow it",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1630678260000,
+
     "id": "1b964601-a6dd-4fcc-b5f3-1000338c9557"
   },
   {
     "title": "Hola",
     "description": "Hola is a freemium web and mobile application which provides a form of VPN service to its users through a peer-to-peer network. It also uses peer-to-peer",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "VPN's when they're free you should be sceptical and the same applies to Hola. Hola logs your online activity, shares your information, and doesn't encrypt your connection. DO NOT DOWNLOAD ",
-        "timestamp": 1631023292000
-      }
-    ],
+    "reviews": "VPN's when they're free you should be sceptical and the same applies to Hola. Hola logs your online activity, shares your information, and doesn't encrypt your connection. DO NOT DOWNLOAD ",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1631023292000,
+
     "id": "9c268c0a-83dc-4b96-856a-bb5ded2772b1"
   },
   {
     "title": "Canva",
     "description": "Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content. The app includes templates for users to use. The platform is free to use and offers paid subscriptions such as Canva Pro and Canva for Enterprise for additional functionality.",
     "likes": 0,
-    "reviews": [
-      {
-        "name": "Chris Martin",
-        "review": "Canva is a good platform for design I used it to create my logo for this page it offer many free templates and fun options to create your own fun designs. There is also payed version to access to more desgins and features but the free version still has plenty so need to fret over it",
-        "timestamp": 1631716921000
-      }
-    ],
+    "reviews": "Canva is a good platform for design I used it to create my logo for this page it offer many free templates and fun options to create your own fun designs. There is also payed version to access to more desgins and features but the free version still has plenty so need to fret over it",
+
+    "name": "Chris Martin",
+
+    "timestamp": 1631716921000,
+
     "id": "fc5261d1-58a0-47e4-9c19-2b7a1715fa1b"
   }
 ]

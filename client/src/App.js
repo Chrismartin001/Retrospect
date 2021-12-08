@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import jwt_decode from "jwt-decode";
+import Review from "./components/Reviews/Reviews";
 
 class App extends Component {
   state = {
@@ -61,6 +62,8 @@ class App extends Component {
                 />
               )}
             />
+
+            <Route path={"/website/:id"} component={Review} />
 
             <Route path="/" exact component={Home} />
           </Switch>

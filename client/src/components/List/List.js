@@ -11,15 +11,25 @@ export default function List(props) {
           return (
             <section key={i} className="website-card">
               <h3>{web.title}</h3>
-              <h4>{web.reviews.name}</h4>
-              <p>{web.timestamp}</p>
+              <p>
+                {new Intl.DateTimeFormat("en-US", {
+                  year: "numeric",
+                  month: "numeric",
+                  day: "2-digit",
+                }).format(web.timestamp)}
+              </p>
               <p>{web.description}</p>
               <div className="card-bottom">
-                <p>{web.likes}</p>
-                <Link to={`/websites/${web.id}`}>
-                  <button className="card-bottom__button">Reviews</button>
-                </Link>
+                <h4>POSTED BY: {web.name}</h4>
+
+                {/* <p>{web.likes}</p> */}
+                {/* <Link to={`/reviews/${web.id}`}> */}
+                {/* <button className="card-bottom__button">Reviews</button> */}
+
+                {/* </Link> */}
               </div>
+              <p className="toggle">{web.reviews}</p>
+              <hr />
             </section>
           );
         })}
